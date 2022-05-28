@@ -1,8 +1,8 @@
 name: android_build
 on:
   push:
-    tags:
-      - 'v1.0.0'
+    branch:
+      - main
       
 jobs:
   android_build:
@@ -32,3 +32,4 @@ jobs:
         with:
           name: android_release
           path: build/app/outputs/flutter-apk/app-release.apk
+          tag: 'v1.0.0'
