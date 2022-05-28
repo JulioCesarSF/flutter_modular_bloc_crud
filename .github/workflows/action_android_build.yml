@@ -1,8 +1,8 @@
 name: android_build
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v1.0.0'
       
 jobs:
   android_build:
