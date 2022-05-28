@@ -2,7 +2,7 @@ name: android_build
 on:
   pull_request:
     branches:
-      - master
+      - main
       
 jobs:
   android_build:
