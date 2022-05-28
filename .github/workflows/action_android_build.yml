@@ -24,12 +24,13 @@ jobs:
           name: android_release
           path: build/app/outputs/flutter-apk/app-release.apk
       - name: Create github artifact release # disable this to save storage
-        uses: actions/checkout@v2
+        steps:
+        - uses: actions/checkout@v2
           with:
             fetch-depth: 0
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "build/app/outputs/flutter-apk/*.apk"          
+        - uses: ncipollo/release-action@v1
+          with:
+            artifacts: "build/app/outputs/flutter-apk/*.apk"          
       - name: Upload app bundle artifact
         uses: actions/upload-artifact@v3
         with:
