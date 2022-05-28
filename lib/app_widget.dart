@@ -14,7 +14,7 @@ class _AppWidgetState extends State<AppWidget> {
     return MaterialApp.router(
       routeInformationParser: Modular.routeInformationParser,
       routerDelegate: Modular.routerDelegate,
-      title: 'flutter_modular_bloc_crud',
+      title: 'flutter_modular_bloc_crudv1',
     );
   }
 }
